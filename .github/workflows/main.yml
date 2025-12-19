@@ -12,7 +12,7 @@ jobs:
       # 1. Checkout code
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ashwintoken }}
+          token: ${{ secrets.ASHWIN }}
 
       # 2. Set up Python
       - uses: actions/setup-python@v2
@@ -28,7 +28,7 @@ jobs:
       - run: |
           git config user.name "AshwinJ03"
           git config user.email "ashwinjai07@gmail.com"
-          git remote set-url origin https://x-access-token:${{ secrets.ashwintoken }}@github.com/AshwinJ03/devops.git
+          git remote set-url origin https://x-access-token:${{ secrets.ASHWIN }}@github.com/AshwinJ03/devops.git
 
       # 5. Push deployment branch
       - run: |
