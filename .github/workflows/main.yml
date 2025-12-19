@@ -19,10 +19,7 @@ jobs:
         with:
           python-version: 3.8
 
-      # 3. Install dependencies
-      - run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+    
 
       # 4. Configure Git with tokenshwinJ03
       - run: |
